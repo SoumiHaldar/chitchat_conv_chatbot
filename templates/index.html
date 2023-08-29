@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+</head>
+    
+<body class="bg-light">
+    <div class="text-center">
+           <h1>Chatbot to find chitchat conversation</h1>
+    
+        <form action="/" method="post">   
+            <label for="user_input">Write your text here</label><br>
+            <textarea id="user_input" name="user_input" rows="4" cols="50">{{ user_input }}</textarea><br>
+            <input type="submit" class="btn btn-primary" value="Submit"><br>
+        </form>
+        <h3>Answer:</h3>
+        <div class="text-success">
+            <p>{{ correct_sentence }}</p>
+        </div>
+    </div>
+</body>
+</html>
